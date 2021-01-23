@@ -1,0 +1,213 @@
+body{
+    background-color: #f6ecc5;
+}
+
+nav{
+    background-color: #382400f2;
+}
+
+h1,h2{
+    text-align: center;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+#contact-me,#translate:hover{
+    cursor: pointer;
+}
+#cv{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    #principal{
+        grid-area: 1 / 1 / 6 / 4;
+        background-color: #412503;
+        display: grid;
+        color: white; 
+
+        #divphoto{
+            grid-area: 1 / 1 / 2 / 4;
+
+            #photo{
+                margin: 2% 25%;
+                width: 50%;
+                border-radius: 50%;
+            }    
+        }
+        #contact{
+            grid-area: 2 / 1 / 3 / 4;
+        }
+
+        #language{
+            grid-area: 3 / 1 / 4 / 4;
+
+            #divlanguage{
+                display: flex;
+
+                progress{
+                    margin-left: 20%;
+                }
+            }
+        }
+
+        #skills{
+            grid-area: 4 / 1 / 5 / 4;
+            ul{
+                margin: 5% auto;
+                width: 60%;
+                padding: 0;
+                display: flex;
+                li{
+                    margin: 1% 2%;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+        #hobbies{
+            grid-area: 5 / 1 / 6 / 4;
+            ul{
+                margin: 5% auto;
+                width: 60%;
+                padding: 0;
+                display: flex;
+                li{
+                    margin: 1% 2%;
+                    i{
+                        font-size: 40px;
+                    }
+                }
+            }            
+        }
+    }
+    #title{
+        height: 60%;
+        grid-area: 1 / 4 / 2 / 9;
+        background-color: #c9a67e;
+        border-radius: 0 0 15% 0;
+
+        h1{
+            margin-top: 3%; 
+        }
+    }
+    
+    #profile{
+        grid-area: 2 / 4 / 3 / 9;
+
+        p{
+            width: 90%;
+            margin: 5% auto;
+            text-align: justify;    
+        }
+
+        h1{
+            margin-top: 2%;
+            background-color: #c9a67e;
+            border-radius: 0 15%;        
+        }
+    }
+    
+    #education{
+        grid-area: 3 / 4 / 4 / 9;
+
+        h1{
+            background-color: #c9a67e;
+            border-radius: 0 15%;        
+        }
+        ul{
+            margin: 5% auto;
+            width: 90%;
+            padding: 0;
+        }
+    }
+    
+    #experience{
+        grid-area: 4 / 4 / 5 / 9;
+
+        h1{
+            background-color: #c9a67e;
+            border-radius: 0 15%;        
+        }
+        ul{
+            margin: 5% auto;
+            width: 60%;
+            padding: 0;
+        }
+    }    
+
+    #footer{
+        background-color: #c9a67e;
+        grid-area: 5 / 4 / 6 / 9;
+        color: white;
+        margin-top: 10%;
+    }
+       
+}
+
+@media only screen and (max-width: 1055px) {
+    #cv{
+        grid-template-rows: repeat(10, 1fr);
+
+        #title{
+            grid-area: 1 / 1 / 2 / 9;
+        }
+        #principal{
+            grid-area: 2 / 1 / 7 / 9;
+        }
+        #divphoto{
+            grid-area: 2 / 1 / 3 / 9;
+        }
+        #contact{
+            grid-area: 3 / 1 / 4 / 9;
+        }
+        #language{
+            grid-area: 4 / 1 / 5 / 9;
+        }
+        #skills{
+            grid-area: 5 / 1 / 6 / 9;
+        }
+        #hobbies{
+            grid-area: 6 / 1 / 7 / 9;
+        }
+        #profile{
+            grid-area: 7 / 1 / 8 / 9;
+        }
+        #education{
+            grid-area: 8 / 1 / 9 / 9;
+        }
+        #experience{
+            grid-area: 9 / 1 / 10 / 9;
+        }
+        #footer{
+            grid-area: 10 / 1 / 11 / 9;
+        }
+    }
+}
+/* 
+    #principal{
+        background-color: #293d3e;
+        width: 30%;
+        height: 150%; 
+        position: absolute;
+        z-index: 1;
+        margin-left: 5%; 
+    }
+    #info{ 
+        width: 100%;
+        position: absolute;
+        z-index: 0; 
+    }
+
+    @media only screen and (max-width:1000px){
+    #principal{
+        width:45%;
+        margin-left: 2%;
+    }
+} */
