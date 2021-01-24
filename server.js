@@ -28,8 +28,8 @@ app.listen(port);
 console.log('serveur ok');
 
 //MESSAGES
-const mail= process.env.MAIL //"aylin.wehner@ethereal.email"
-const pass= process.env.PASS //"bcABeMRE6Tw6kjge3A"
+const mail= process.env.MAIL
+const pass= process.env.PASS
 
 app.post("/msg", (req, res) => {
 
@@ -52,10 +52,16 @@ app.post("/msg", (req, res) => {
     // })
 
     transporter.sendMail({
-            from: mail,
-            to: "makrai.yassin@gmail.com", 
-            subject: `Message de ${req.body.email}`, 
-            text: req.body.message, 
+        from: mail,
+        to: "makrai.yassin@gmail.com",
+        subject: `Message de ${req.body.email}`,
+        text: req.body.message,
+    }, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+        }
     });
 
     res.redirect("back");
