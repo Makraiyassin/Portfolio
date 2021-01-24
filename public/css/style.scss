@@ -18,6 +18,9 @@ ul{
 #contact-me,#translate:hover{
     cursor: pointer;
 }
+#translate{
+    color: white;
+}
 #cv{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -150,7 +153,6 @@ ul{
     }
        
 }
-
 @media only screen and (max-width: 1055px) {
     #cv{
         grid-template-rows: repeat(10, 1fr);
@@ -172,9 +174,15 @@ ul{
         }
         #skills{
             grid-area: 5 / 1 / 6 / 9;
+            ul {
+                width: 40% !important;
+            }
         }
         #hobbies{
             grid-area: 6 / 1 / 7 / 9;
+            ul {
+                width: 40% !important;
+            }
         }
         #profile{
             grid-area: 7 / 1 / 8 / 9;
@@ -190,6 +198,21 @@ ul{
         }
     }
 }
+@media only screen and (max-width: 755px) {
+    #cv{
+        #skills{
+            ul {
+                width: 70% !important;
+            }
+        }
+        #hobbies{
+            ul {
+                width: 70% !important;
+            }
+        }
+    }
+}
+
 /* 
     #principal{
         background-color: #293d3e;

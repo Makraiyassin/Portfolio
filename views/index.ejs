@@ -1,78 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/style.css">
+<%- include('header')%>
 
-    <title>Document</title>
-</head>
-
-<body>
-    <nav class="navbar  navbar-expand-lg navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">CV</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a id="contact-me" class="nav-link" >Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Portfolio
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://freshop-yassin.herokuapp.com">Webshop</a>
-                            </li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="http://nextflixx.rf.gd/login.php">Nextflix</a></li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://makraiyassin.github.io/js-game-jam-team-5">Snake</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://todoapp-y.herokuapp.com">To
-                                    do</a></li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://makraiyassin.github.io/project-hangman/index.html">Hangman</a></li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://makraiyassin.github.io/corona-challenge">Corona</a></li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://makraiyassin.github.io/Bouman-Johnson-housing-project">Immo
-                                    forecast</a></li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://makraiyassin.github.io/API-Sprint">API
-                                    dog</a></li>
-
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" target="_blank"
-                                    href="https://github.com/Makraiyassin?tab=repositories">Github</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a id="translate" class="nav-link" >FR</a>
-                    </li>
-                </ul>
-                <!--
-                <form class="d-flex">
-                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-                -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">send a message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form method="POST" action="/msg">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" name="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" name="message" id="message" style="height: 100px" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #b69d6f">Close</button>
+                        <input type="submit" class="btn btn-primary" value="Send" style="background-color: #725217">
+                    </div>
+                </form> 
             </div>
         </div>
-    </nav>
-
+    </div>
+    
     <div id="cv">
         <div id="principal">
             <div id="divphoto">
@@ -171,12 +132,4 @@
                 <li><i class="fas fa-bus"></i> Bus driver at GEO</li>
             </ul>
         </div>
-        <div id="footer">
-
-        </div>
-    </div>
-    <script src="https://kit.fontawesome.com/8eb2e9d886.js" crossorigin="anonymous"></script>
-    <script src="../public/js/translate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<%- include('footer')%>
