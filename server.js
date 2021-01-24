@@ -25,7 +25,7 @@ app.get("/",(req, res) => {
 
 app.listen(port);
 
-console.log('serveur ok');
+console.log('serveur ok',process.env);
 
 //MESSAGES
 const mail= process.env.MAIL
