@@ -52,7 +52,7 @@ app.post("/msg", (req, res) => {
     })
 
     transporter.sendMail({
-            from: process.env.MAIL,
+            from: mail,
             to: "makrai.yassin@gmail.com", 
             subject: `Message de ${req.body.email}`, 
             text: req.body.message, 
