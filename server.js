@@ -25,12 +25,12 @@ app.get("/",(req, res) => {
 
 app.listen(port);
 
-console.log('serveur ok',process.env);
+console.log('serveur ok');
 
 //MESSAGES
 const mail= process.env.MAIL
 const pass= process.env.PASS
-
+console.log(mail);
 app.post("/msg", (req, res) => {
 
     const transporter = nodemailer.createTransport({
