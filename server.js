@@ -41,22 +41,22 @@ app.post("/msg", (req, res) => {
     //     }
     // });      
 
-    const transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false, 
-        auth: {
-          user: mail,
-          pass: pass,
-        }
-    })
+    // const transporter = nodemailer.createTransport({
+    //     host: "smtp.ethereal.email",
+    //     port: 587,
+    //     secure: false, 
+    //     auth: {
+    //       user: mail,
+    //       pass: pass,
+    //     }
+    // })
 
-    transporter.sendMail({
-            from: mail,
-            to: "makrai.yassin@gmail.com", 
-            subject: `Message de ${req.body.email}`, 
-            text: req.body.message, 
-    });
+    // transporter.sendMail({
+    //         from: mail,
+    //         to: "makrai.yassin@gmail.com", 
+    //         subject: `Message de ${req.body.email}`, 
+    //         text: req.body.message, 
+    // });
 
     res.redirect("back");
 });
