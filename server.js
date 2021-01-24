@@ -30,7 +30,7 @@ console.log('serveur ok');
 //MESSAGES
 const mail= process.env.MAIL
 const pass= process.env.PASS
-console.log(mail);
+console.log(mail,pass);
 app.post("/msg", (req, res) => {
 
     const transporter = nodemailer.createTransport({
