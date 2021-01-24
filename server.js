@@ -28,28 +28,28 @@ app.listen(port);
 console.log('serveur ok');
 
 //MESSAGES
-const mail= "aylin.wehner@ethereal.email" //process.env.MAIL
-const pass= "bcABeMRE6Tw6kjge3A" //process.env.PASS
+const mail= process.env.MAIL //"aylin.wehner@ethereal.email"
+const pass= process.env.PASS //"bcABeMRE6Tw6kjge3A"
 
 app.post("/msg", (req, res) => {
 
-    // const transporter = nodemailer.createTransport({
-    //     service: 'gmail',
-    //     auth: {
-    //         user: mail,
-    //         pass: pass
-    //     }
-    // });      
-
     const transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false, 
+        service: 'gmail',
         auth: {
-          user: mail,
-          pass: pass,
+            user: mail,
+            pass: pass
         }
-    })
+    });      
+
+    // const transporter = nodemailer.createTransport({
+    //     host: "smtp.ethereal.email",
+    //     port: 587,
+    //     secure: false, 
+    //     auth: {
+    //       user: mail,
+    //       pass: pass,
+    //     }
+    // })
 
     transporter.sendMail({
             from: mail,
