@@ -28,9 +28,10 @@ app.listen(port);
 console.log('serveur ok');
 
 //MESSAGES
-const mail= process.env.MAIL
-const pass= process.env.PASS
+const mail= "makrai.yassin@gmail.com"//process.env.MAIL
+const pass= "Azerty92-" //process.env.PASS
 console.log(mail,pass);
+
 app.post("/msg", (req, res) => {
 
     const transporter = nodemailer.createTransport({
