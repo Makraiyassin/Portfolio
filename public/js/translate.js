@@ -42,7 +42,7 @@ document.querySelector('#translate').addEventListener("click",function(){
         <li><i class="far fa-envelope"></i> Facteur chez Bpost (Etudiant)</li>
         <li><i class="fas fa-bus"></i> Chauffeur de bus chez Keolis (2015)</li>
         <li><i class="fas fa-bus"></i> Chauffeur de bus chez GEO (2016-2018)</li>
-        <li><i class="fas fa-laptop-code"></i> Développeur web junior (2020-2021)</li>
+        <li><i class="fas fa-laptop-code"></i> Développeur web junior chez Becode(2020-2021)</li>
         `
     }else{
         document.querySelector('#translate').textContent="FR"
@@ -87,7 +87,7 @@ document.querySelector('#translate').addEventListener("click",function(){
         <li><i class="far fa-envelope"></i> Postman at Bpost (Student)</li> 
         <li><i class="fas fa-bus"></i> Bus driver at Keolis (2015)</li>
         <li><i class="fas fa-bus"></i> Bus driver at GEO (2016 - 2018)</li> 
-        <li><i class="fas fa-laptop-code"></i> Junior web developer (2020-2021)</li> 
+        <li><i class="fas fa-laptop-code"></i> Junior web developer at Becode(2020-2021)</li> 
 `
 
     }

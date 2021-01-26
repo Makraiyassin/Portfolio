@@ -73,6 +73,11 @@ ul {
   width: 50px;
   height: 50px;
 }
+#cv #principal #skills ul li img:hover {
+  transition: 1s;
+  width: 55px;
+  height: 55px;
+}
 #cv #principal #hobbies {
   grid-area: 5/1/6/4;
 }
@@ -87,6 +92,10 @@ ul {
 }
 #cv #principal #hobbies ul li i {
   font-size: 40px;
+}
+#cv #principal #hobbies ul li i:hover {
+  transition: 1s;
+  font-size: 45px;
 }
 #cv #title {
   height: 60%;
@@ -153,7 +162,7 @@ ul {
 }
 #cv #footer #network a:hover {
   transition: 1s;
-  font-size: 500%;
+  font-size: 420%;
 }
 
 @media only screen and (max-width: 1055px) {
