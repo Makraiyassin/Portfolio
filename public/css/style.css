@@ -138,17 +138,22 @@ ul {
   background-color: #c9a67e;
   grid-area: 5/4/6/9;
   color: white;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 #cv #footer #network {
   display: flex;
+  justify-content: center;
   width: max-content;
-  margin: 3% auto;
+  margin: auto;
 }
 #cv #footer #network a {
-  font-size: 500%;
-  padding: 3% 15%;
+  font-size: 400%;
+  padding: 2% 5%;
   color: #412200;
+}
+#cv #footer #network a:hover {
+  transition: 1s;
+  font-size: 500%;
 }
 
 @media only screen and (max-width: 1055px) {
