@@ -47,7 +47,9 @@ ul{
 
         #language{
             grid-area: 3 / 1 / 4 / 4;
-
+            h1{
+                margin-bottom: 10%;
+            }
             #divlanguage{
                 display: flex;
 
@@ -150,6 +152,18 @@ ul{
         grid-area: 5 / 4 / 6 / 9;
         color: white;
         margin-top: 10%;
+        
+        #network{
+            display: flex;
+            width: max-content;
+            margin: 3% auto;
+
+            a{
+                font-size: 500%;
+                padding: 3% 15%;
+                color: rgb(65, 34, 0);
+            }    
+        }
     }
        
 }
