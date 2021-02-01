@@ -17,6 +17,7 @@ document.querySelector('#translate').addEventListener("click",function(){
         `
         document.querySelector('#skills h1').textContent=`Compétences`
 
+        document.querySelector('#profile h1').textContent="Profil"
 
         document.querySelector('#profile').lastElementChild.textContent=`
         Je suis né le 21/06/1992 à Bruxelles. Je suis marié et j'ai un enfant. Je suis une personne pragmatique et organisée. 
@@ -64,6 +65,8 @@ document.querySelector('#translate').addEventListener("click",function(){
 
         document.querySelector('#skills h1').textContent=`Skills`
 
+        document.querySelector('#profile h1').textContent="Profile"
+
         document.querySelector('#profile').lastElementChild.textContent=`
         I was born on 06/21/1992 in Brussels. I am married and I have a child. I am a pragmatic and organized
         person. I like working in a team but working alone doesn't scare me. I am punctual, voluntary,
@@ -81,8 +84,7 @@ document.querySelector('#translate').addEventListener("click",function(){
         <li><i class="fa fa-school"></i> Private English courses level A2 at CLL (2019)</li>
         <br>
         <li><i class="fas fa-hourglass-half"></i> Web developer training in progress at Becode (2020-2021)</li>
-`
-
+        `
         document.querySelector('#experience h1').textContent='Professional experience'
 
         document.querySelector('#experience').lastElementChild.innerHTML=`
