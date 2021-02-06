@@ -1,66 +1,60 @@
-/* GENERAL */
 body{
     font-family: 'Lato', sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6{
     font-weight: bold;
 }
+
 img{
     max-width: 70%;
     height: auto;
 }
+
 ul,ol{
     list-style:none;
 }
+
+a{
+    text-decoration: none;
+}
+
 section{
     padding: 45px 0px 80px 0;
 }
+
 section .heading{
     text-align: center;
     padding-bottom: 40px;
 }
+
 section .heading h2{
     text-transform: uppercase;
 }
-.blue-divider{
+
+.bruin-div{
     width: 100px;
     height: 2px;
     background: #504016;
     margin: 0 auto 20px;
 
 }
-.white-divider{
+.white-div{
     width: 100px;
     height: 2px;
     background: #e9e3d9;
     margin: 0 auto 20px;
 }
 
-
-/* MENU */
-.navbar {
-    background:#473418;
-    font-size: 12px;
-    border-bottom: 1px solid #e9e3d9;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
+nav{
+    background-color: #382400f2;
 }
-.nav-pills .nav-link{
-    color: #e9e3d9 !important;
-    text-align: center;
-}
-.nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
-    color: #00abab !important;
-    background-color: #e9e3d9 !important;
-}
-.navbar-toggler{
-    color: #e9e3d9 !important;
-    border-style: none;
+  
+#translate {
+    color: white;
 }
 
-/* ABOUT */
- #about{
+#about{
     padding-top: 50px;
     background: rgb(201, 166, 126);
     background-position-y: center;
@@ -304,69 +298,10 @@ section .heading h2{
     filter: none;
     -webkit-filter: none; 
 }
-#portfolio .col-md-4{
-    margin-bottom: 20px;
+#portfolio .col-md-6{
+    margin-bottom: 5%;
 }
 .portfolioText{
     color: #e9e3d9;
     text-align: center;
-}
-/* Quotes */
-#quotes{
-    background: #e9e3d9;
-}
-#quotes .heading h2{
-    color: #473418;
-}
-
-.fas.fa-chevron-left, .fas.fa-chevron-right{
-    background-image: none;
-    color: black;
-}
-.carousel-indicators{
-    bottom: 0px;
-}
-.carousel-indicators li{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    border: 1px solid #473418;
-}
-.carousel-indicators li.active{
-    background-color: #473418;
-}
-#myCarousel .carousel-item{
-    padding: 40px 90px;
-}
-#myCarousel .carousel-item h3{
-    color: #473418;
-    font-style: italic;
-}
-
-/* FOOTER */
-footer{
-    background-image:url("background.jpg");
-    background-position-y:bottom;
-    padding: 20px 0 40px;
-}
-footer h2{
-    color: #473418;
-}
-.label{
-    color: #473418;
-    font-weight: bolder;
-    float: left;
-}
-footer .fas{
-    font-size:  25px;
-    margin: 20px;
-    color: #e9e3d9;
-    height: 30px;
-}
-footer .fas:hover{
-    font-size:  27px;
-}
-footer h5{
-    color:#e9e3d9;
-    font-weight: normal;
 }

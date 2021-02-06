@@ -20,8 +20,13 @@ app.use('/public',express.static('public'));
 
 
 app.get("/",(req, res) => {
-    res.render("index");
+    res.render("index-v2");
 });
+
+app.get("/translate",(req, res) => {
+    res.render("translate");
+});
+
 
 app.listen(port);
 
