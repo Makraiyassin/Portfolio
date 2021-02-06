@@ -305,3 +305,20 @@ nav{
     color: #e9e3d9;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 1250px) {
+    #portfolio .col-md-6{
+        margin-bottom: 10% !important;
+    }    
+}
+@media only screen and (max-width: 990px) {
+    #portfolio .col-md-6{
+        margin-bottom: 15% !important;
+    }    
+}
+@media only screen and (max-width: 400px) {
+    #portfolio .col-md-6{
+        margin-bottom: 25% !important;
+    }    
+}
