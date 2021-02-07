@@ -24,7 +24,7 @@ app.get("/",(req, res) => {
 });
 
 app.get("/translate",(req, res) => {
-    res.render("translate");
+    res.render("translate-v2");
 });
 
 
