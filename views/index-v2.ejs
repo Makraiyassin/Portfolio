@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="shortcut icon" href="public/images/dossier.png" type="image/x-icon">
     <link rel="stylesheet" href="public/css/style-v2.css">
 </head>
@@ -95,7 +96,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-xl-6">
-                    <span ID="icon" class="fas fa-code"></span>
+                    <span ID="icon" class="fas fa-laptop-code"></span>
                     <div class="skills-block">
                         <ul>
                             <li id="skillsIcon">
@@ -122,7 +123,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-xl-6">
-                    <span ID="icon" class="fas fa-code"></span>
+                    <span ID="icon" class="fas fa-laptop-code"></span>
                     <div class="skills-block">
                         <ul>
                             <li id="skillsIcon">
@@ -216,7 +217,7 @@
                 <div class="col-md-6">
                     <div class="education-block">
                         <h5>2018-2019</h5>
-                        <span class="fas fa-graduation-cap"></span>
+                        <span class="fas fa-school"></span>
                         <h3>Learning the basics of web development</h3>
                         <h5>Self-taught</h5>
                         <div class="bruin-div"></div>
@@ -240,7 +241,7 @@
                 <div class="col-md-6">
                     <div class="education-block">
                         <h5>2013</h5>
-                        <span class="fas fa-graduation-cap"></span>
+                        <span class="fas fa-school"></span>
                         <h3>First year of bachelor's degree - Teacher in economics</h3>
                         <h5>ISPG</h5>
                         <div class="bruin-div"></div>
@@ -312,6 +313,63 @@
             </div>
         </div>
     </section>
+
+    <!-- <section id="recommendation">
+        <div class="container">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Recommandation</h2>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <% if(locals.recommend){%>
+                        <%recommend.forEach(element=>{%>
+                    <div class="carousel-item active">
+                        <h3><%=element.name%></h3>
+                        <h4><%=element.recommender%></h4>
+                        <h5><%=element.recommend-me%></h5>       
+                    </div>
+                        <%})%> 
+                    <%}%>
+                    <div class="carousel-item active">
+                        <h3>abcd</h3>
+                        <h4>efgh</h4>
+                        <h5>ijklmnop</h5>       
+                    </div>
+                    <div class="carousel-item">
+                        <h3>abcd</h3>
+                        <h4>efgh</h4>
+                        <h5>ijklmnop</h5>       
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <form action="/recommend" method="POST">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="name-recommend" id="recommender" required>
+                <label for="name-recommend">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="recommender" id="who">
+                <label for="recommender">Who are you? (example: "colleague of yassin at Becode in 2020")</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" name="recommendation" id="recommend-me" style="height: 100px" required></textarea>
+                <label for="recommend-me">Recommend me</label>
+            </div>        
+        </form>
+    </section> -->
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

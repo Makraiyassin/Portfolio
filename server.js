@@ -8,6 +8,10 @@ const port = process.env.PORT || 8000;
 const bodyParser = require('body-parser')
 const nodemailer = require("nodemailer");
 
+const mongoose = require('mongoose');
+mongoose.connect(process.env.DB, {useNewUrlParser: true,useUnifiedTopology: true }); 
+console.log("we're connected!");
+
 //MOTEUR TEMPLATE
 app.set('view engine','ejs');
 
@@ -32,7 +36,7 @@ app.listen(port);
 
 console.log('serveur fonctionne sur port',port);
 
-//MESSAGES
+//MESSAGES Contact
 const mail= process.env.MAIL
 const pass= process.env.PASS
 
@@ -45,16 +49,6 @@ app.post("/msg", (req, res) => {
             pass: pass
         }
     });      
-
-    // const transporter = nodemailer.createTransport({
-    //     host: "smtp.ethereal.email",
-    //     port: 587,
-    //     secure: false, 
-    //     auth: {
-    //       user: mail,
-    //       pass: pass,
-    //     }
-    // })
 
     transporter.sendMail({
         from: mail,
@@ -71,4 +65,12 @@ app.post("/msg", (req, res) => {
 
     res.redirect("back");
 });
+
+//Recommendation
+app.post("/recommend", (req, res) => {
+
+    
+    res.redirect("back");
+});
+
 
