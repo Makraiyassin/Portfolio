@@ -60,7 +60,7 @@ document.getElementById('translate').addEventListener('click',(e)=>{
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="/public/CV 08-03-21.pdf" target="_blank" id="cvddl" class="nav-link"
+                                <a href="/public/CV fr 08-03-21.pdf" target="_blank" id="cvddl" class="nav-link"
                                     download>Télécharger mon CV</a>
                             </li>
         
@@ -76,7 +76,7 @@ document.getElementById('translate').addEventListener('click',(e)=>{
                 <div class="heading">
                     <h1>Yassin Makraï</h1>
                     <h4>Développeur web junior</h4>
-                    <a href="/public/CV 08-03-21.pdf" target="_blank" class="button1">Télécharger mon CV</a>
+                    <a href="/public/CV fr 08-03-21.pdf" target="_blank" class="button1">Télécharger mon CV</a>
                 </div>
             </section>
         
