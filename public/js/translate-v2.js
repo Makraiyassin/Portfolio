@@ -29,6 +29,8 @@ document.getElementById('translate').addEventListener('click',(e)=>{
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" target="_blank"
+                                            href="https://quiz-marvel-react.web.app/">Quiz Marvel</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
                                             href="https://fernelmove.herokuapp.com">Fernelmove (Hackaton)</a></li>
                                     <li><a class="dropdown-item" target="_blank"
                                             href="https://freshop-yassin.herokuapp.com">Webshop</a></li>
